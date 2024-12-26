@@ -17,39 +17,39 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = _2_RazorPagesMovie
 build_property.RootNamespace = _2_RazorPagesMovie
-build_property.ProjectDir = /home/rafalamao/Documents/Progra/c #/2_RazorPagesMovie/
+build_property.ProjectDir = /home/rafalamao/Documents/Progra/dotnet/c #/2_RazorPagesMovie/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /home/rafalamao/Documents/Progra/c #/2_RazorPagesMovie
+build_property.MSBuildProjectDirectory = /home/rafalamao/Documents/Progra/dotnet/c #/2_RazorPagesMovie
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/rafalamao/Documents/Progra/c \#/2_RazorPagesMovie/Pages/Error.cshtml]
+[/home/rafalamao/Documents/Progra/dotnet/c \#/2_RazorPagesMovie/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/rafalamao/Documents/Progra/c \#/2_RazorPagesMovie/Pages/Index.cshtml]
+[/home/rafalamao/Documents/Progra/dotnet/c \#/2_RazorPagesMovie/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/rafalamao/Documents/Progra/c \#/2_RazorPagesMovie/Pages/Privacy.cshtml]
+[/home/rafalamao/Documents/Progra/dotnet/c \#/2_RazorPagesMovie/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/rafalamao/Documents/Progra/c \#/2_RazorPagesMovie/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[/home/rafalamao/Documents/Progra/dotnet/c \#/2_RazorPagesMovie/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/rafalamao/Documents/Progra/c \#/2_RazorPagesMovie/Pages/_ViewImports.cshtml]
+[/home/rafalamao/Documents/Progra/dotnet/c \#/2_RazorPagesMovie/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/rafalamao/Documents/Progra/c \#/2_RazorPagesMovie/Pages/_ViewStart.cshtml]
+[/home/rafalamao/Documents/Progra/dotnet/c \#/2_RazorPagesMovie/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/rafalamao/Documents/Progra/c \#/2_RazorPagesMovie/Pages/Shared/_Layout.cshtml]
+[/home/rafalamao/Documents/Progra/dotnet/c \#/2_RazorPagesMovie/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-838rchup1b

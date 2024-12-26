@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/rafalamao/Documents/Progra/c #/2_RazorPagesMovie/2_RazorPagesMovie.csproj": {}
+    "/home/rafalamao/Documents/Progra/dotnet/c #/2_RazorPagesMovie/2_RazorPagesMovie.csproj": {}
   },
   "projects": {
-    "/home/rafalamao/Documents/Progra/c #/2_RazorPagesMovie/2_RazorPagesMovie.csproj": {
+    "/home/rafalamao/Documents/Progra/dotnet/c #/2_RazorPagesMovie/2_RazorPagesMovie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/rafalamao/Documents/Progra/c #/2_RazorPagesMovie/2_RazorPagesMovie.csproj",
+        "projectUniqueName": "/home/rafalamao/Documents/Progra/dotnet/c #/2_RazorPagesMovie/2_RazorPagesMovie.csproj",
         "projectName": "2_RazorPagesMovie",
-        "projectPath": "/home/rafalamao/Documents/Progra/c #/2_RazorPagesMovie/2_RazorPagesMovie.csproj",
+        "projectPath": "/home/rafalamao/Documents/Progra/dotnet/c #/2_RazorPagesMovie/2_RazorPagesMovie.csproj",
         "packagesPath": "/home/rafalamao/.nuget/packages/",
-        "outputPath": "/home/rafalamao/Documents/Progra/c #/2_RazorPagesMovie/obj/",
+        "outputPath": "/home/rafalamao/Documents/Progra/dotnet/c #/2_RazorPagesMovie/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/rafalamao/.nuget/NuGet/NuGet.Config"
@@ -46,6 +46,24 @@
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SQLite": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[9.0.0, )"
             }
