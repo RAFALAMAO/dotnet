@@ -1,0 +1,30 @@
+/home/rafalamao/Documents/Progra/c #/1_WebPage/bin/Debug/net8.0/appsettings.Development.json
+/home/rafalamao/Documents/Progra/c #/1_WebPage/bin/Debug/net8.0/appsettings.json
+/home/rafalamao/Documents/Progra/c #/1_WebPage/bin/Debug/net8.0/c #.staticwebassets.runtime.json
+/home/rafalamao/Documents/Progra/c #/1_WebPage/bin/Debug/net8.0/c #
+/home/rafalamao/Documents/Progra/c #/1_WebPage/bin/Debug/net8.0/c #.deps.json
+/home/rafalamao/Documents/Progra/c #/1_WebPage/bin/Debug/net8.0/c #.runtimeconfig.json
+/home/rafalamao/Documents/Progra/c #/1_WebPage/bin/Debug/net8.0/c #.dll
+/home/rafalamao/Documents/Progra/c #/1_WebPage/bin/Debug/net8.0/c #.pdb
+/home/rafalamao/Documents/Progra/c #/1_WebPage/obj/Debug/net8.0/c #.GeneratedMSBuildEditorConfig.editorconfig
+/home/rafalamao/Documents/Progra/c #/1_WebPage/obj/Debug/net8.0/c #.AssemblyInfoInputs.cache
+/home/rafalamao/Documents/Progra/c #/1_WebPage/obj/Debug/net8.0/c #.AssemblyInfo.cs
+/home/rafalamao/Documents/Progra/c #/1_WebPage/obj/Debug/net8.0/c #.csproj.CoreCompileInputs.cache
+/home/rafalamao/Documents/Progra/c #/1_WebPage/obj/Debug/net8.0/c #.MvcApplicationPartsAssemblyInfo.cache
+/home/rafalamao/Documents/Progra/c #/1_WebPage/obj/Debug/net8.0/c #.RazorAssemblyInfo.cache
+/home/rafalamao/Documents/Progra/c #/1_WebPage/obj/Debug/net8.0/c #.RazorAssemblyInfo.cs
+/home/rafalamao/Documents/Progra/c #/1_WebPage/obj/Debug/net8.0/staticwebassets.build.json
+/home/rafalamao/Documents/Progra/c #/1_WebPage/obj/Debug/net8.0/staticwebassets.development.json
+/home/rafalamao/Documents/Progra/c #/1_WebPage/obj/Debug/net8.0/staticwebassets/msbuild.c #.Microsoft.AspNetCore.StaticWebAssets.props
+/home/rafalamao/Documents/Progra/c #/1_WebPage/obj/Debug/net8.0/staticwebassets/msbuild.build.c #.props
+/home/rafalamao/Documents/Progra/c #/1_WebPage/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.c #.props
+/home/rafalamao/Documents/Progra/c #/1_WebPage/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.c #.props
+/home/rafalamao/Documents/Progra/c #/1_WebPage/obj/Debug/net8.0/staticwebassets.pack.json
+/home/rafalamao/Documents/Progra/c #/1_WebPage/obj/Debug/net8.0/scopedcss/Pages/Shared/_Layout.cshtml.rz.scp.css
+/home/rafalamao/Documents/Progra/c #/1_WebPage/obj/Debug/net8.0/scopedcss/bundle/c #.styles.css
+/home/rafalamao/Documents/Progra/c #/1_WebPage/obj/Debug/net8.0/scopedcss/projectbundle/c #.bundle.scp.css
+/home/rafalamao/Documents/Progra/c #/1_WebPage/obj/Debug/net8.0/c #.dll
+/home/rafalamao/Documents/Progra/c #/1_WebPage/obj/Debug/net8.0/refint/c #.dll
+/home/rafalamao/Documents/Progra/c #/1_WebPage/obj/Debug/net8.0/c #.pdb
+/home/rafalamao/Documents/Progra/c #/1_WebPage/obj/Debug/net8.0/c #.genruntimeconfig.cache
+/home/rafalamao/Documents/Progra/c #/1_WebPage/obj/Debug/net8.0/ref/c #.dll
