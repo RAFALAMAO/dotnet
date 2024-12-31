@@ -25,3 +25,28 @@ catch (Exception)
 {
   Console.WriteLine("El archivo no existe");
 }
+
+// ===== Peticiones http ======
+// GET
+GetData().Wait();
+
+static async Task GetData() {
+  string url = "https://jsonplaceholder.typicode.com/posts";
+  HttpClient client = new HttpClient();
+
+  var httpResponse = client.GetAsync(url);
+
+  if (httpResponse.Result.IsSuccessStatusCode) {
+    Console.WriteLine("Respuesta exitosa");
+
+    var content = await httpResponse.Result.Content.ReadAsStringAsync();
+    List<Post> posts = JsonSerializer.Deserialize<List<Post>>(content);
+
+    Console.WriteLine(JsonSerializer.Serialize(posts, new JsonSerializerOptions { WriteIndented = true }));
+
+    foreach (var post in posts)
+    {
+      Console.WriteLine(post.id);
+    }
+  }
+}
