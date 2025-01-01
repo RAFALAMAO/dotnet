@@ -1,4 +1,6 @@
-﻿using System.Text.Json;
+﻿using System.Text;
+using System.Text.Json;
+using System.Text.Unicode;
 using ClasesObjs.Models;
 
 Cerveza cerveza = new (200, "Corona");
@@ -28,7 +30,8 @@ catch (Exception)
 
 // ===== Peticiones http ======
 // GET
-GetData().Wait();
+// GetData().Wait();
+PostData().Wait();
 
 static async Task GetData() {
   string url = "https://jsonplaceholder.typicode.com/posts";
@@ -48,5 +51,30 @@ static async Task GetData() {
     {
       Console.WriteLine(post.id);
     }
+  }
+}
+
+static async Task PostData() {
+  string url = "https://jsonplaceholder.typicode.com/posts";
+  HttpClient client = new HttpClient();
+
+  Post post = new Post(){
+    userId = 50,
+    body = "Esto es una prueba",
+    title = "Mi post"
+  };
+
+  var data = JsonSerializer.Serialize<Post>(post);
+  HttpContent body = new StringContent(data, Encoding.UTF8, "application/json");
+
+  var httpResponse = await client.PostAsync(url,body);
+
+  if (httpResponse.IsSuccessStatusCode) {
+    Console.WriteLine("Respuesta exitosa");
+
+    var content = await httpResponse.Content.ReadAsStringAsync();
+    var postResult = JsonSerializer.Deserialize<Post>(content);
+
+    Console.WriteLine(JsonSerializer.Serialize(postResult, new JsonSerializerOptions { WriteIndented = true }));
   }
 }
