@@ -7,6 +7,7 @@ public class Bebida
   // Atributos
   public string Nombre { get; set; }
   public int CantidadMl { get; set; }
+  public int id { get; set; }
 
   // Constructores
   public Bebida(string Nombre, int CantidadMl)

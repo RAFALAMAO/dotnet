@@ -2,6 +2,7 @@
 using System.Text.Json;
 using System.Text.Unicode;
 using ClasesObjs.Models;
+using ClasesObjs.Services;
 
 Cerveza cerveza = new (200, "Corona");
 cerveza.Beberse(300);
@@ -33,6 +34,20 @@ catch (Exception)
 // GetData().Wait();
 PostData().Wait();
 
+// ===== Uso de generics ======
+var cervezaTest = new Cerveza(200, "Corona");
+
+SendRequest<Cerveza> sendRequest = new SendRequest<Cerveza>();
+var respGen = await sendRequest.Send(cervezaTest);
+Console.WriteLine(JsonSerializer.Serialize(respGen, new JsonSerializerOptions { WriteIndented = true }));
+
+var postTest = new Post("Esto es un post", "Esto el body");
+SendRequest<Post> sendRequestPost = new SendRequest<Post>();
+var respGenPost = await sendRequestPost.Send(postTest);
+Console.WriteLine(JsonSerializer.Serialize(respGenPost, new JsonSerializerOptions { WriteIndented = true }));
+
+
+// Functions
 static async Task GetData() {
   string url = "https://jsonplaceholder.typicode.com/posts";
   HttpClient client = new HttpClient();
