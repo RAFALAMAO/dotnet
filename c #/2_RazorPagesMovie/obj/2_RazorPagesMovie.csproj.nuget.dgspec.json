@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/rafalamao/Documents/Progra/dotnet/c #/2_RazorPagesMovie/2_RazorPagesMovie.csproj": {}
+    "/home/rafalamo/Documents/Progra/dotnet/c #/2_RazorPagesMovie/2_RazorPagesMovie.csproj": {}
   },
   "projects": {
-    "/home/rafalamao/Documents/Progra/dotnet/c #/2_RazorPagesMovie/2_RazorPagesMovie.csproj": {
+    "/home/rafalamo/Documents/Progra/dotnet/c #/2_RazorPagesMovie/2_RazorPagesMovie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/rafalamao/Documents/Progra/dotnet/c #/2_RazorPagesMovie/2_RazorPagesMovie.csproj",
+        "projectUniqueName": "/home/rafalamo/Documents/Progra/dotnet/c #/2_RazorPagesMovie/2_RazorPagesMovie.csproj",
         "projectName": "2_RazorPagesMovie",
-        "projectPath": "/home/rafalamao/Documents/Progra/dotnet/c #/2_RazorPagesMovie/2_RazorPagesMovie.csproj",
-        "packagesPath": "/home/rafalamao/.nuget/packages/",
-        "outputPath": "/home/rafalamao/Documents/Progra/dotnet/c #/2_RazorPagesMovie/obj/",
+        "projectPath": "/home/rafalamo/Documents/Progra/dotnet/c #/2_RazorPagesMovie/2_RazorPagesMovie.csproj",
+        "packagesPath": "/home/rafalamo/.nuget/packages/",
+        "outputPath": "/home/rafalamo/Documents/Progra/dotnet/c #/2_RazorPagesMovie/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/rafalamao/.nuget/NuGet/NuGet.Config"
+          "/home/rafalamo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
