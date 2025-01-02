@@ -1,6 +1,7 @@
 ﻿using System.Text;
 using System.Text.Json;
 using System.Text.Unicode;
+using ClasesObjs.Errors;
 using ClasesObjs.Models;
 using ClasesObjs.Services;
 
@@ -95,6 +96,28 @@ Console.WriteLine(JsonSerializer.Serialize(bares, new JsonSerializerOptions { Wr
 // Obtner los bares por diferentes filtros
 var barConSky = bares.Where(bar => bar.Cervezas.Any(cerveza => cerveza.Nombre == "Corona")).ToList();
 Console.WriteLine(JsonSerializer.Serialize(barConSky, new JsonSerializerOptions { WriteIndented = true }));
+
+// ===== Uso de Excepciones ======
+try
+{
+  // throw new InvalidOperationException("Esto es una prueba");
+  throw new BeerNotFoundException("Esto es una prueba de beer exception");
+}
+catch (InvalidOperationException)
+{
+  Console.WriteLine("Ha caido una operación invalida");
+}
+catch (BeerNotFoundException ex) {
+  // Se utiliza una excepcion personalizada para poder tratar el error
+  Console.WriteLine(ex.Message);
+}
+catch (Exception ex)
+{
+  Console.WriteLine(ex.Message);
+}
+finally {
+  Console.WriteLine("Se ejecuta siempre");
+}
 
 // Functions
 static async Task GetData()
