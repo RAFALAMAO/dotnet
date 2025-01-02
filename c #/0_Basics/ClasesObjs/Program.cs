@@ -74,6 +74,28 @@ Console.WriteLine(JsonSerializer.Serialize(ordenados, new JsonSerializerOptions 
 var sum = randomNumbers.Sum(x => x);
 Console.WriteLine(sum);
 
+// ===== Objetos complejos =====
+List<Bar> bares = new List<Bar>() {
+  new Bar("Bar Aaron", new List<Cerveza>(){
+    new Cerveza(100, "Corona"),
+    new Cerveza(300, "Heineken"),
+    new Cerveza(300, "Alare")
+  }),
+  new Bar("Bar Locos", new List<Cerveza>(){
+    new Cerveza(100, "Corona"),
+    new Cerveza(200, "Carta Blanca"),
+  }),
+  new Bar("Bar Carakas", new List<Cerveza>(){
+    new Cerveza(100, "Smirnoff"),
+    new Cerveza(400, "Sky"),
+  })
+};
+Console.WriteLine(JsonSerializer.Serialize(bares, new JsonSerializerOptions { WriteIndented = true }));
+
+// Obtner los bares por diferentes filtros
+var barConSky = bares.Where(bar => bar.Cervezas.Any(cerveza => cerveza.Nombre == "Corona")).ToList();
+Console.WriteLine(JsonSerializer.Serialize(barConSky, new JsonSerializerOptions { WriteIndented = true }));
+
 // Functions
 static async Task GetData()
 {
