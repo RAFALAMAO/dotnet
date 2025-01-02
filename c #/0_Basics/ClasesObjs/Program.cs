@@ -33,7 +33,7 @@ catch (Exception)
 // ===== Peticiones http ======
 // GET
 // GetData().Wait();
-PostData().Wait();
+// PostData().Wait();
 
 // ===== Uso de generics ======
 var cervezaTest = new Cerveza(200, "Corona");
@@ -107,7 +107,8 @@ catch (InvalidOperationException)
 {
   Console.WriteLine("Ha caido una operación invalida");
 }
-catch (BeerNotFoundException ex) {
+catch (BeerNotFoundException ex)
+{
   // Se utiliza una excepcion personalizada para poder tratar el error
   Console.WriteLine(ex.Message);
 }
@@ -115,11 +116,66 @@ catch (Exception ex)
 {
   Console.WriteLine(ex.Message);
 }
-finally {
+finally
+{
   Console.WriteLine("Se ejecuta siempre");
 }
 
-// Functions
+// ===== Uso de delegado, funciones y actions ======
+Mostrar mostrar = Show;
+HacerAlgoDelegado(mostrar);
+
+MostrarUpper mostrarUpper = ShowUpper;
+HacerAlgoDelegadoUpper(mostrarUpper);
+
+// Ultimo parametro es lo que regresa
+Func<string, int> mostrarLength = ShowLength;
+HacerAlgoFunc(mostrarLength);
+
+// Uso de Action, este no regresa nada
+Action<string, string> mostrarAction = ShowAction;
+HacerAlgoAction(mostrarAction);
+
+// Se puede hacer lo mismo con una funcion anonima
+Action<string, string> mostrarActionAnon = (string a, string b) =>
+{
+  Console.WriteLine("Soy una funcion anonima: " + a + " " + b);
+};
+HacerAlgoAction(mostrarActionAnon);
+
+// ===== Predicados ======
+// Sentencia solo true o false
+// Reutilizar condiciones
+var numbers = new List<int>() { 1, 2, 3, 4, 5 };
+
+var predicado = new Predicate<int>(IsDivider2);
+var dividers2 = numbers.FindAll(predicado);
+
+Console.WriteLine(JsonSerializer.Serialize(dividers2, new JsonSerializerOptions { WriteIndented = true }));
+
+Predicate<int> negativePredicade = x => !predicado(x);
+var negativeDividers2 = numbers.FindAll(negativePredicade);
+Console.WriteLine(JsonSerializer.Serialize(negativeDividers2, new JsonSerializerOptions { WriteIndented = true }));
+
+List<Beer> beers = new List<Beer>()
+{
+  new("Corona", 100),
+  new("Heineken", 300),
+  new("Sky Blue", 250),
+};
+
+ShowBeerThatIGetDrunk(beers, x => x.Alcohol > 200);
+
+// * Predicados
+static bool IsDivider2(int x) => x % 2 == 0;
+
+// * Functions
+static void ShowBeerThatIGetDrunk(List<Beer> beers, Predicate <Beer> condition) {
+  List<Beer> evilBeers = beers.FindAll(condition);
+
+  Console.WriteLine(JsonSerializer.Serialize(evilBeers, new JsonSerializerOptions { WriteIndented = true }));
+}
+
 static async Task GetData()
 {
   string url = "https://jsonplaceholder.typicode.com/posts";
@@ -170,3 +226,50 @@ static async Task PostData()
     Console.WriteLine(JsonSerializer.Serialize(postResult, new JsonSerializerOptions { WriteIndented = true }));
   }
 }
+
+static void Show(string cad)
+{
+  Console.WriteLine("Soy un delegado con data: " + cad);
+}
+
+static string ShowUpper(string cad)
+{
+  return cad.ToUpper();
+}
+
+static int ShowLength(string cad)
+{
+  return cad.Length;
+}
+
+static void HacerAlgoDelegado(Mostrar mostrarFcn)
+{
+  mostrarFcn("Esto es una prueba");
+}
+
+static void HacerAlgoDelegadoUpper(MostrarUpper mostrarFcn)
+{
+  var result = mostrarFcn("Esto es una prueba");
+  Console.WriteLine(result);
+}
+
+static void HacerAlgoFunc(Func<string, int> mostrarFcn)
+{
+  var result = mostrarFcn("Esto es una prueba");
+  Console.WriteLine(result);
+}
+
+static void HacerAlgoAction(Action<string, string> mostrarFcn)
+{
+  mostrarFcn("Esto es una prueba", "del action");
+}
+
+// Action no regresa nada
+static void ShowAction(string cad, string cad2)
+{
+  Console.WriteLine("Soy un delegado con data: " + cad + " " + cad2);
+}
+
+// * Delegados
+delegate void Mostrar(string cadena);
+delegate string MostrarUpper(string cadena);
