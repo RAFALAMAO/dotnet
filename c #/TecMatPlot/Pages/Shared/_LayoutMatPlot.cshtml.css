@@ -1,6 +1,7 @@
 ﻿/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+/* Header */
 a.navbar-brand {
   white-space: normal;
   text-align: center;
@@ -17,7 +18,8 @@ a {
   border-color: #1861ac;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
@@ -31,25 +33,45 @@ a {
 }
 
 .box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
 }
 
 header {
   font-family: Manrope;
 }
 
-button.accept-policy {
+li.nav-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar-dark {
+  .navbar-nav {
+    .nav-link {
+      color: #E1EDF7;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+/* Content */
+button.btn-go-home {
   border: none;
-  line-height: inherit;
+  /* line-height: inherit; */
   border-radius: 8px;
-  background: #F14914;
+  background: #f14914;
 
   padding: 12px 24px;
   justify-content: center;
   align-items: center;
   gap: 10px;
 
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -57,6 +79,7 @@ button.accept-policy {
   line-height: normal;
 }
 
+/* Footer */
 .footer {
   position: absolute;
   bottom: 0;
