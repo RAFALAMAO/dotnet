@@ -49,7 +49,7 @@ li.nav-item {
 .navbar-dark {
   .navbar-nav {
     .nav-link {
-      color: #E1EDF7;
+      color: #e1edf7;
 
       &:hover,
       &:focus {
@@ -86,4 +86,9 @@ button.btn-go-home {
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
+}
+
+.wave-box {
+  height: 150px;
+  background: url('svgs/wave.svg') center/auto 100%;
 }
