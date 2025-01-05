@@ -9,15 +9,15 @@
 <div class="text-center">
     <div class="d-flex gap-5">
         <div class="flex-row">
-            <p class="hero-title text-start fs-1" >Problemáticas identificadas</p>
+            <p class="hero-title text-start fs-1">Problemáticas identificadas</p>
             <p class="hero-text">
                 Explora el siguiente gráfico interactivo para conocer las problemáticas relacionadas al agua que
                 atienden los participantes al Water Disruption Challenge. Podrás identificar sus similitudes o
                 diferencias para detectar nuevas oportunidades de colaboración o innovación.
             </p>
-            <div class="hero-buttons">
-                <button>Vista 2D</button>
-                <button>Vista 3D</button>
+            <div class="hero-btns-container">
+                <button id="btn-2d" class="hero-btn hero-active-btn" onclick="changeGraph('2D')">Vista 2D</button>
+                <button id="btn-3d" class="hero-btn" onclick="changeGraph('3D')">Vista 3D</button>
             </div>
         </div>
         <div class="flex-row">
@@ -25,13 +25,22 @@
         </div>
     </div>
 
-    <div class="graph-container">
+    @* 3D Graph *@
+    <div id="3d-graph" class="graph-container hide">
         <div id="ca66dcfa-fc39-45b5-885c-750da1b4c81f"></div>
     </div>
 
-    <a class="nav-link text-decoration-underline text-end" asp-area="" asp-page="" style="margin-bottom: 150px;">Glosario</a>
+    @* 2D Graph *@
+    <div id="2d-graph" class="graph-container">
+        <div id="32638f3f-8835-4c9e-8862-8cce24881f6d"></div>
+    </div>
+
+    <a class="nav-link text-decoration-underline text-end" asp-area="" asp-page=""
+        style="margin-bottom: 150px;">Glosario</a>
 </div>
 
 @section Scripts {
-    <script src="~/js/plotly/mps3dGraph.js"></script>
+    <script src="~/js/plotly/wdc3dGraph.js"></script>
+    <script src="~/js/plotly/wdc2dGraph.js"></script>
+    <script src="~/js/plotly/selectGraph.js"></script>
 }

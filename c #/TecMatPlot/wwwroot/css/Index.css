@@ -18,23 +18,33 @@
   line-height: normal;
 }
 
-.hero-buttons {
+.hero-btns-container {
   display: flex;
   gap: 20px;
+}
 
-  & button {
-		font-family: "Work Sans", serif;
-    background: white;
-    border: 1.167px solid #002c47;
-		border-radius: 4.667px;
-    height: 44.877px;
-    padding: 7px 14px;
-		box-shadow: 0px 2.333px 2.333px 0px rgba(33, 37, 41, 0.06), 0px 0px 1.167px 0px rgba(33, 37, 41, 0.08);
-  }
+.hero-btn {
+  font-family: "Work Sans", serif;
+  background: white;
+  border: 1.167px solid #002c47;
+  border-radius: 4.667px;
+  height: 44.877px;
+  padding: 7px 14px;
+  box-shadow: 0px 2.333px 2.333px 0px rgba(33, 37, 41, 0.06), 0px 0px 1.167px 0px rgba(33, 37, 41, 0.08);
+}
+
+.hero-active-btn {
+  background: #0091E8;
+  color: white;
+  border: none;
 }
 
 .graph-container {
 	margin-top: 20px;
 	display: flex;
 	justify-content: center;
+}
+
+.hide {
+  display: none;
 }

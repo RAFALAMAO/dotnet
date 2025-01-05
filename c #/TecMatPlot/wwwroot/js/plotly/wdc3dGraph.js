@@ -825,6 +825,23 @@ if (document.getElementById("ca66dcfa-fc39-45b5-885c-750da1b4c81f")) {
           showticklabels: false,
           zeroline: false,
         },
+        camera: {
+        center: {
+          x: 0,
+          y: 0,
+          z: 0,
+        },
+        eye: {
+          x: 0,
+          y: 0.55,
+          z: -1.55,
+        },
+        up: {
+          x: 0.0,
+          y: 0.0,
+          z: 1,
+        },
+      },
       },
       margin: { t: 50, b: 50, l: 100, r: 50 },
       legend: {
