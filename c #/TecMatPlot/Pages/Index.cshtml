@@ -7,7 +7,7 @@
 
 <link rel="stylesheet" href="~/css/Index.css" asp-append-version="true" />
 <div class="text-center">
-    <div class="d-flex gap-5">
+    <div id="hero" class="d-flex gap-5">
         <div class="flex-row">
             <p class="hero-title text-start fs-1">Problemáticas identificadas</p>
             <p class="hero-text">
@@ -25,20 +25,18 @@
         </div>
     </div>
 
-    @* 3D Graph *@
-    <div id="3d-graph" class="graph-container hide">
-        <div id="ca66dcfa-fc39-45b5-885c-750da1b4c81f"></div>
-    </div>
-
-    @* 2D Graph *@
-    <div id="2d-graph" class="graph-container">
+    @* Graphs *@
+    <div id="graphs" class="graph-container">
+        @* 3D *@
+        <div id="ca66dcfa-fc39-45b5-885c-750da1b4c81f" class="hide"></div>
+        @* 2D *@
         <div id="32638f3f-8835-4c9e-8862-8cce24881f6d"></div>
     </div>
 
     @* Button trigger modal *@
     <div class="d-flex justify-content-end">
-        <button type="button" class="btn-show-modal" data-bs-toggle="modal"
-            data-bs-target="#staticBackdrop" style="margin-bottom: 180px;">
+        <button type="button" class="btn-show-modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+            style="margin-bottom: 180px;">
             Glosario
         </button>
     </div>
