@@ -1,4 +1,5 @@
-﻿.hero-title {
+﻿/* Hero */
+.hero-title {
   color: #002c47;
   font-family: "Space Grotesk";
   font-size: 48px;
@@ -39,6 +40,7 @@
   border: none;
 }
 
+/* Graph */
 .graph-container {
 	margin-top: 20px;
 	display: flex;
@@ -47,4 +49,49 @@
 
 .hide {
   display: none;
+}
+
+/* Modal */
+.btn-show-modal {
+  border: none;
+  background: none;
+
+  color: #002C47;
+  /* Body 2 (Regular) */
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: 6%; /* 0.96px */
+  text-underline-offset: 12%; /* 1.92px */
+  text-underline-position: from-font;
+}
+
+.modal-lg {
+  width: 40%;
+}
+
+.modal-title {
+  font-family: "Space Grotesk";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.modal-body {
+  font-family: Manrope;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+
+  & button {
+    background: #F14914;
+  }
 }

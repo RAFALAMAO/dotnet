@@ -35,8 +35,50 @@
         <div id="32638f3f-8835-4c9e-8862-8cce24881f6d"></div>
     </div>
 
-    <a class="nav-link text-decoration-underline text-end" asp-area="" asp-page=""
-        style="margin-bottom: 150px;">Glosario</a>
+    @* Button trigger modal *@
+    <div class="d-flex justify-content-end">
+        <button type="button" class="btn-show-modal" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop" style="margin-bottom: 180px;">
+            Glosario
+        </button>
+    </div>
+
+    @* Modal *@
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content p-3">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Glosario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="text-start">
+                        <li><b>Saneamiento:</b> Gestión higiénica de desechos humanos para proteger la salud.</li>
+                        <li><b>Agua gris:</b> Agua residual doméstica de bajo nivel contaminante, parcialmente
+                            reutilizable.</li>
+                        <li><b>Acuífero:</b> Capa subterránea que almacena y permite el flujo de agua.</li>
+                        <li><b>Eutrofización:</b> Exceso de nutrientes en el agua que provoca proliferación de algas.
+                        </li>
+                        <li><b>Infiltración:</b> Proceso mediante el cual el agua penetra en el suelo o subsuelo.</li>
+                        <li><b>Desalinización:</b> Eliminación de sales y minerales del agua salada para su consumo.
+                        </li>
+                        <li><b>Humedal:</b> Ecosistema acuático con suelos saturados o inundados de forma permanente o
+                            estacional.</li>
+                        <li><b>Escasez hídrica:</b> Situación donde la demanda de agua excede la disponibilidad
+                            sostenible.</li>
+                        <li><b>Potabilización:</b> Proceso químico y físico para hacer el agua apta para el consumo
+                            humano.</li>
+                        <li><b>Reutilización:</b> Uso repetido de agua tratada para reducir el consumo de recursos
+                            hídricos.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 @section Scripts {
