@@ -1,0 +1,58 @@
+{
+  "waterDisruption": {
+    "tituloPagina": "Water Disruption Challenge",
+    "hero": {
+      "titulo": "Problemáticas identificadas",
+      "descripcion": "Explora el siguiente gráfico interactivo para conocer las problemáticas relacionadas al agua que atienden los participantes al Water Disruption Challenge. Podrás identificar sus similitudes o diferencias para detectar nuevas oportunidades de colaboración o innovación.",
+      "btn2d": "Vista 2D",
+      "btn3d": "Vista 3D"
+    },
+    "modal": {
+      "btnAbrir": "Glosario",
+      "btnCerrar": "Cerrar",
+      "titulo": "Glosario",
+      "glosario": [
+        {
+          "param": "Saneamiento",
+          "def": "Gestión higiénica de desechos humanos para proteger la salud."
+        },
+        {
+          "param": "Agua gris",
+          "def": "Agua residual doméstica de bajo nivel contaminante, parcialmente reutilizable."
+        },
+        {
+          "param": "Acuífero",
+          "def": "Capa subterránea que almacena y permite el flujo de agua."
+        },
+        {
+          "param": "Eutrofización",
+          "def": "Exceso de nutrientes en el agua que provoca proliferación de algas."
+        },
+        {
+          "param": "Infiltración",
+          "def": "Proceso mediante el cual el agua penetra en el suelo o subsuelo."
+        },
+        {
+          "param": "Desalinización",
+          "def": "Eliminación de sales y minerales del agua salada para su consumo."
+        },
+        {
+          "param": "Humedal",
+          "def": "Ecosistema acuático con suelos saturados o inundados de forma permanente o estacional."
+        },
+        {
+          "param": "Escasez hídrica",
+          "def": "Situación donde la demanda de agua excede la disponibilidad sostenible."
+        },
+        {
+          "param": "Potabilización",
+          "def": "Proceso químico y físico para hacer el agua apta para el consumo humano."
+        },
+        {
+          "param": "Reutilización",
+          "def": "Uso repetido de agua tratada para reducir el consumo de recursos hídricos."
+        }
+      ]
+    }
+  }
+}
