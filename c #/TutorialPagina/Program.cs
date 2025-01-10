@@ -1,7 +1,15 @@
+using Microsoft.EntityFrameworkCore;
+using TutorialPagina.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<TestTutoContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DBContext") ?? throw new InvalidOperationException("Connection string 'DBContext' not found."));
+});
 
 var app = builder.Build();
 
