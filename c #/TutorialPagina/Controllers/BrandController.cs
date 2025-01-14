@@ -14,9 +14,7 @@ namespace TutorialPagina.Controllers
         }
 
         public async Task<ActionResult> Index()
-        {
-            return View(await _context.Brands.ToListAsync());
-        }
+            => View(await _context.Brands.ToListAsync());
 
     }
 }
